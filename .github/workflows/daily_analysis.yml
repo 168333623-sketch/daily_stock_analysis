@@ -211,6 +211,7 @@ jobs:
           fi
 
           # 执行分析
+          export STOCK_LIST="600522,603618"
           if [ "$MODE" = "market-only" ]; then
             python main.py --market-review $FORCE_RUN_ARG
           elif [ "$MODE" = "stocks-only" ]; then
